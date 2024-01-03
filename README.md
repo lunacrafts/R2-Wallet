@@ -4,7 +4,7 @@ Run docker container
 
 Open docker container
 
-`docker exec -it $docker_container_id /bin/sh`
+`docker exec -it b2e3b7...28174 /bin/sh`
 
 Run entrypoint (from docker container) and synchronize wallet
 
