@@ -13,3 +13,7 @@ Run entrypoint (from docker container) and synchronize wallet
 Run wallet
 
 `/usr/local/bin/cli_wallet`
+
+Follow instructions
+
+https://github.com/R-Squared-Project/R-Squared-core/wiki/How-to-become-a-witness-(Block-Producer)#2-create-a-cli-wallet
