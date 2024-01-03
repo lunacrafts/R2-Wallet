@@ -5,4 +5,5 @@ services:
     image: ghcr.io/r-squared-project/r-squared-core:1.0.0
     ports:
       - "8090:8090"
-    command: /bin/bash -c "tail -f /dev/null"
+    volumes: 
+      - ./.data:/var/lib/rsquared

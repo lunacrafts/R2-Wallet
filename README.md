@@ -1,19 +1,14 @@
-Run docker container
+## Create Docker container
 
-`docker-compose up`
+./bin/up.sh
+./bin/attach.sh
 
-Open docker container
+# CLI wallet
 
-`docker exec -it b2e3b7...28174 /bin/sh`
+/usr/local/bin/cli_wallet
 
-Run entrypoint (from docker container) and synchronize wallet
-
-`/usr/local/bin/entrypoint.sh`
-
-Run wallet
-
-`/usr/local/bin/cli_wallet`
-
-Follow instructions
+# Witness
 
 https://github.com/R-Squared-Project/R-Squared-core/wiki/How-to-become-a-witness-(Block-Producer)#2-create-a-cli-wallet
+
+/usr/local/bin/witness_node
