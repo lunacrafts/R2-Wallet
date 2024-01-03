@@ -1,6 +1,7 @@
 ### Create Docker container
 
 ./bin/up.sh
+
 ./bin/attach.sh
 
 ### CLI wallet
