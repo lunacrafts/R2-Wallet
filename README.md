@@ -2,7 +2,7 @@
 
 ./bin/up.sh
 
-./bin/attach.sh
+./bin/wallet.sh
 
 ### CLI wallet
 
