@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Service name in the docker-compose file
-SERVICE_NAME="axxxxxxm_wallet"
+SERVICE_NAME="r_squared_core"
 
 # Check if the docker-compose service is running
 if docker-compose ps | grep -q $SERVICE_NAME; then
