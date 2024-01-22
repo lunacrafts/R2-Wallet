@@ -1,9 +1,9 @@
 version: '3.3'
 
 services:
-  r_squared_core:
+  r2_wallet:
     image: ghcr.io/r-squared-project/r-squared-core:1.0.0
     ports:
       - "8090:8090"
     volumes: 
-      - ./.data:/var/lib/rsquared
+      - ./.data:/var/lib/wallet
