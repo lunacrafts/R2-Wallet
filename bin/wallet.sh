@@ -38,12 +38,8 @@ SHELL_PATH=$(determine_shell_path $OS_TYPE)
 # Check if the docker-compose service is running
 if docker-compose ps | grep -q $SERVICE_NAME; then
     echo "Attaching to the $SERVICE_NAME service..."
-    # First try with determined shell path
-    if ! execute_in_service_with_shell "$SHELL_PATH"; then
-        echo "$SHELL_PATH failed, trying /bin/bash..."
-        # If the first attempt fails, then try with /bin/bash
-        execute_in_service_with_shell "/bin/bash"
-    fi
+    # Try with determined shell path
+    execute_in_service_with_shell "$SHELL_PATH"
 else
     echo "Service $SERVICE_NAME is not running."
 fi
