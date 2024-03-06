@@ -1,9 +1,13 @@
-version: '3.3'
+version: "3.3"
 
 services:
-  r2_wallet:
+  r2_rpc:
     image: ghcr.io/r-squared-project/r-squared-core:1.0.0
     ports:
       - "8090:8090"
-    volumes: 
+  r2_wallet:
+    image: ghcr.io/r-squared-project/r-squared-core:1.0.0
+    volumes:
       - ./.data:/var/lib/wallet
+    command: |
+      tail -f /dev/null

@@ -7,7 +7,7 @@ SERVICE_NAME="r2_wallet"
 execute_in_service_with_shell() {
     local shell=$1
     echo "Attempting to use $shell..."
-    docker-compose exec $SERVICE_NAME $shell -c "mkdir -p /var/lib/wallet && cd /var/lib/wallet && /usr/local/bin/cli_wallet"
+    docker-compose exec $SERVICE_NAME $shell -c "mkdir -p /var/lib/wallet && cd /var/lib/wallet && /usr/local/bin/cli_wallet -s ws://r2_rpc:8090"
 }
 
 # Function to determine the shell path based on the operating system
